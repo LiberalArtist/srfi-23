@@ -2,6 +2,8 @@
 
 ** by Stephan Houben
 
+
+
 This repository hosts [[https://srfi.schemers.org/srfi-23/][SRFI 23]]: Error reporting mechanism, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
 This SRFI is in /final/ status.
