@@ -4,6 +4,8 @@
 
 
 
+keywords: [[https://srfi.schemers.org/?keywords=control-flow][Control Flow]], [[https://srfi.schemers.org/?keywords=error-handling][Error Handling]]
+
 This repository hosts [[https://srfi.schemers.org/srfi-23/][SRFI 23]]: Error reporting mechanism, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
 This SRFI is in /final/ status.
