@@ -70,7 +70,7 @@ and that it is easy to implement in most major implementations.
 
 <p>
 The following procedure should be provided:
-<p>
+<p id="error">
 <code>(error</code> &lt;reason&gt;<code> [&lt;arg1&gt; [&lt;arg2&gt; ...]])</code>
 <p>
 The argument &lt;reason&gt; should be a string.
@@ -108,7 +108,7 @@ are given.
 </ol>  
 An implementation might report more information than just 
 &lt;reason&gt; and &lt;arg1&gt;... . For instance, it might report the procedure name in which
-the error occured or even print a stack trace.
+the error occurred or even print a stack trace.
 However, this will require additional support in the Scheme implementation.
 
 
