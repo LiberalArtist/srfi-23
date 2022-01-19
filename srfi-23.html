@@ -1,23 +1,20 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
-<html>
+<html lang="en">
   <head>
     <title>SRFI 23: Error reporting mechanism</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/srfi.css" type="text/css" />
+    <link rel="stylesheet" href="https://srfi.schemers.org/srfi.css" type="text/css" />
+    <link href="/favicon.png" rel="icon" sizes="192x192" type="image/png">
   </head>
 
   <body>
 
-<H1>Title</H1>
+<h1><a href="https://srfi.schemers.org/"><img class="srfi-logo" src="https://srfi.schemers.org/srfi-logo.svg" alt="SRFI surfboard logo" /></a>23: Error reporting mechanism</h1>
 
-Error reporting mechanism
+<p>by Stephan Houben</p>
 
-<H1>Author</H1>
-
-Stephan Houben
-
-<H1>Status</H1>
+<h2>Status</h2>
 
 <p>This SRFI is currently in <em>final</em> status.  Here is <a href="https://srfi.schemers.org/srfi-process.html">an explanation</a> of each status that a SRFI can hold.  To provide input on this SRFI, please send email to <code><a href="mailto:srfi+minus+23  +at+srfi+dotschemers+dot+org">srfi-23  @<span class="antispam">nospam</span>srfi.schemers.org</a></code>.  To subscribe to the list, follow <a href="https://srfi.schemers.org/srfi-list-subscribe.html">these instructions</a>.  You can access previous messages via the mailing list <a href="https://srfi-email.schemers.org/srfi-23  ">archive</a>.</p>
 <UL>
@@ -27,14 +24,14 @@ Stephan Houben
 </UL>
 </P>
 
-<H1>Abstract</H1>
+<h2>Abstract</h2>
 
 A mechanism is proposed to allow Scheme code to report errors and abort
 execution.
 The proposed mechanism is already implemented in several Scheme systems
 and can be implemented, albeit imperfectly, in any R5RS conforming Scheme.
 
-<H1>Rationale</H1>
+<h2>Rationale</h2>
 
 <p>
 R5RS Scheme requires certain operations to signal an error when they fail.
@@ -66,7 +63,7 @@ mechanism described in this SRFI and others are easily made compatible
 with this SRFI. This shows that the proposed mechanism is considered useful
 and that it is easy to implement in most major implementations.
 
-<H1>Specification</H1>
+<h2>Specification</h2>
 
 <p>
 The following procedure should be provided:
@@ -112,7 +109,7 @@ the error occurred or even print a stack trace.
 However, this will require additional support in the Scheme implementation.
 
 
-<H1>Why <code>error</code> is a procedure</H1>
+<h2>Why <code>error</code> is a procedure</h2>
 
 It is conceivable to allow <code>error</code> to be a special form,
 such as a macro, rather than a procedure. This might make providing
@@ -130,7 +127,7 @@ has been considered, but rejected, for two reasons.
   worthwhile to allow it to be a special form.
 </ol>
 
-<H1>Implementation</H1>
+<h2>Implementation</h2>
 
 An implementation that works in almost any R5RS Scheme is the following:
 <pre>
@@ -171,7 +168,7 @@ terms of the exception mechanism of SRFI 18.
 </pre>
 Here, <code>make-error-exception</code> is implementation dependent.
 
-<H1>Copyright</H1>
+<h2>Copyright</h2>
 <p>Copyright (C) <a href="mailto:stephanh@win.tue.nl">Stephan Houben</a> (2001). All Rights Reserved.</p>
 
 <p>
